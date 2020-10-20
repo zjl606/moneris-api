@@ -1,12 +1,12 @@
 {
-    "name": "craigpaul/moneris-api",
-    "description": "An easier way to consume the (truly awful) Moneris eSELECTplus API.",
+    "name": "zjl606/moneris-api",
+    "description": "Moneris API 修改了craigpaul/moneris-api的代码",
     "keywords": ["moneris", "eselectplus", "api"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Craig Paul",
-            "email": "craig@townfolio.co"
+            "name": "zhoujianlong",
+            "email": "zjl_606@aliyun.com"
         }
     ],
     "require": {

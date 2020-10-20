@@ -163,6 +163,18 @@ class Vault extends Gateway
         return $this->process($transaction);
     }
 
+    public function purchase3DS(array $params = [])
+    {
+        $params = array_merge($params, [
+            'type' => 'res_cavv_purchase_cc',
+            'crypt_type' => Crypt::SSL_ENABLED_MERCHANT,
+        ]);
+
+        $transaction = $this->transaction($params);
+
+        return $this->process($transaction);
+    }
+
     /**
      * Tokenize a previous transaction to save the credit
      * card used in the Moneris Vault.
