@@ -204,7 +204,8 @@ class Transaction
                 'cavv_purchase',
                 'cavv_preauth',
                 'res_purchase_cc',
-                'res_preauth_cc'
+                'res_preauth_cc',
+                'res_cavv_purchase_cc'
             ]
         );
 

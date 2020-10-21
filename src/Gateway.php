@@ -293,4 +293,16 @@ class Gateway
 
         return $this->process($transaction);
     }
+
+    public function mpiVault($params)
+    {
+        $params = array_merge($params, [
+            'type' => 'res_mpitxn',
+            // 'crypt_type' => Crypt::SSL_ENABLED_MERCHANT,
+        ]);
+
+        $transaction = $this->transaction($params);
+
+        return $this->process($transaction);
+    }
 }
